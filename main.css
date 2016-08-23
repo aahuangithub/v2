@@ -1,0 +1,360 @@
+body, h1{
+    font-size: 1.1em; 
+    line-height: 1.5em; 
+    margin: auto; 
+    padding: 0;
+    height:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+img {
+    max-width: 100%; 
+    display: block; 
+    margin: 0.75em auto;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+a:hover{
+    color:rebeccapurple;
+    text-decoration: underline
+}
+.header{
+    position: relative;
+    color: #F3E5F5;   
+    width:100%; 
+    height:500px;
+    font-size: 3em; 
+    text-align: center;
+    background: #D060EB;
+    margin: auto;
+
+}
+.header h1{
+    font-weight: 200;
+}
+.header h2{
+    font-weight: 200;
+    font-size: 0.5em;
+    margin-top: -0.75em!important;
+   
+    
+}
+#news{
+    width: 50%;
+    margin: 0 auto;
+    display: inline;
+    position:relative;
+
+}
+#news .title{
+    width: 100%;
+    
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    color: black
+    
+}
+
+#news article{
+    width: 20%;
+    height: 100%;
+    padding: 25px;
+    border-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    display: inline-block;
+    vertical-align: top;
+}
+article img{
+    float: left;
+    padding-right: 20px;
+    display: inline-flex;
+    width: 33%;
+}
+.article-title, .article-date{
+    display:block;
+    text-transform: uppercase
+    
+}
+.article-date{
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #666666
+}
+.event-table{
+    float: left;
+    overflow-y: scroll;
+    list-style-type: none;
+    height:350px;
+    margin-right: 1em;
+    
+}
+.event{
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    text-align: center;
+}
+.pic-table{
+    border: 2px solid purple; 
+    padding: 0.5em;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    background-color: rgba(256, 256, 256, 1);
+    opacity(1);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    text-align: center;
+    z-index: 10000
+    
+}
+.pic-table li{
+    width: 50%;
+    padding:0.1em;
+    padding-right:0.33em;
+    padding-left:0.33em;
+    list-style-type: none;
+}
+
+.button{
+  display: flex;
+  overflow: hidden;
+  margin: 15px;
+  padding: 12px 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 60ms ease;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+    font-weight: bold;
+    color: #D060EB !important;
+  border: 2px solid #D060EB;
+  border-radius: 5px;
+  line-height: 1.3;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+
+  
+
+}
+.button:hover{ 
+    
+    background: #D060EB;
+    
+  }
+.calendar{
+    position:relative; 
+    overflow: inherit;
+    height:0px;
+    padding-bottom: 50%;
+}
+.calendar iframe{
+    z-index:999;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 75%;
+    transform: translate(-50%, 20%);
+}
+.nav-bar {
+    width: 100%;
+    background-color: rgba(256, 256, 256, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1%;
+    border-bottom-style: solid;
+    border-bottom-color: #EDDDED;
+    border-bottom-width: 1px;
+    line-height: 0.75em;
+    z-index: 9999;
+    text-align: center;
+    
+    
+}
+.nav-bar li{
+
+    display: inline;
+    font-size: 80%;
+    padding: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(2, 0, 2);
+    word-spacing: 20%;
+    
+}
+.nav-bar .section:hover{
+    text-decoration: underline
+}
+.nav-bar .social{
+    position: fixed; 
+    line-height: 0;
+    display:inline;
+    top:20%; 
+    right:1%; 
+    height: 1.5em;
+    width: 1.5em;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+.social li{
+    display:inline
+}
+
+.button-text:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.event-sidescroll {
+    float:left;
+}
+
+.photo-container{
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.photo-container ul li{
+    display:inline-block;
+
+    border-style: dashed;
+    border-color: gainsboro;
+    border-width: 1px;
+}
+.photo-container ul li img{
+    height: 4em;
+    width: 12.5%;
+    padding:10px
+}
+
+.label {
+    font-size: 0.75em;
+    font-weight: 400
+}
+
+.month-title {
+}
+
+.month-title:before {
+    display: block; 
+  content: " "; 
+  margin-top: -2.5em; 
+  height: 2.5em; 
+  visibility: hidden; 
+}
+
+.menu-button {
+    padding:8px;
+    opacity:0.1px;
+    background: #FFF;
+    border-width: 2px;
+    border-color: #D060EB;
+    border-style: solid;
+    border-radius: 100px;
+    display: none
+}
+
+
+
+.top-spacer {
+    position: relative;  
+    width:100%; 
+    height:500px;
+    margin: auto;
+    visibility:hidden;
+    
+}
+
+
+
+.contact {
+    margin-top:2em;
+    border: 1px solid gainsboro;
+    padding:0.5em;
+    height:100%
+}
+
+
+
+
+
+.officer-bio {
+    width:100%;
+    padding-bottom: 0.5em;
+    border:1px solid white!important;
+    border-bottom-color: gainsboro!important;
+    text-align:left;
+    
+    
+}
+
+
+
+.month2 {
+    background-color:white
+}
+
+.month1 {
+    background-color: #E070FB;
+    padding-bottom: 3em;
+    padding-top:0.5em;
+    color:white
+}
+
+.officer-pic {
+    float:left;
+    max-width: 3em;
+    margin-bottom: 0;
+    margin-top:-1.25em;
+    padding-bottom: 0;
+    border-radius: 50%;
+    
+}
+
+.officer-bio p {
+    padding-right: 0.66em !important;
+    padding-left: 0.5em !important;
+    margin-top: 0.1em !important;
+    margin-bottom: 0em !important;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.33em
+}
+
+.officer-bio h1 {
+    font-size: 1.3em;
+    font-weight: 400;
+    padding-left:1em; 
+    line-height:1.0em; 
+    margin-left:2.1em
+}
+
+.officer-bio h2 {
+    font-size: 0.75em;
+    font-weight: 200;
+    line-height: 0.5em  
+}
+
+.officer-title {
+    font-size:0.75em; 
+    font-weight:200; 
+    margin-bottom: 0.25em
+}
+
+.social-media {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%
+}
